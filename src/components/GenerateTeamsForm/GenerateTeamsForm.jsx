@@ -46,11 +46,13 @@ export default function GenerateTeamsForm({ setTeams }) {
     };
 
     async function generateTeams() {
-        console.log(groupGenerationRequestBody);
-        const response = await axios.post(
-            `${baseUrl}:${port}/generate-groups`,
-            groupGenerationRequestBody
-        );
+        let url;
+        if (port) {
+            url = `${baseUrl}:${port}/generate-groups`;
+        } else {
+            url = `${baseUrl}/generate-groups`;
+        }
+        const response = await axios.post(url, groupGenerationRequestBody);
         const data = response.data;
         setTeams(data);
     }
@@ -58,15 +60,11 @@ export default function GenerateTeamsForm({ setTeams }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission
-        console.log("File:", file);
-        console.log("Max Group Size:", maxGroupSize);
-        console.log("Allowed Deviation:", allowedDeviation);
 
         const reader = new FileReader();
         reader.onload = () => {
             const csvData = reader.result;
             const studentsAsJson = convertCsvToJson(csvData);
-            console.log(studentsAsJson);
 
             setGroupGenerationRequestBody({
                 maxGroupSize: parseInt(maxGroupSize),
