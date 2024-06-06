@@ -16,7 +16,9 @@ export default function GenerateTeamsForm({ setTeams }) {
     const [buttonDisabled, setButtonDisabled] = useState(true);
 
     useEffect(() => {
-        generateTeams();
+        if (Object.keys(groupGenerationRequestBody).length > 0) {
+            generateTeams();
+        }
     }, [groupGenerationRequestBody]);
 
     useEffect(() => {
