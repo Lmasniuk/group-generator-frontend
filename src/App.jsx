@@ -10,7 +10,7 @@ function App() {
 
     return (
         <>
-            <h1>Team Generator</h1>
+            <h1>Team Genie</h1>
             <GenerateTeamsForm setTeams={setTeams} />
             {teams.length > 0 && <TeamResults teams={teams} />}
         </>
