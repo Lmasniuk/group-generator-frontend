@@ -3,13 +3,16 @@ import "./TeamResults.scss";
 
 export default function TeamResults({ teams }) {
     return (
-        <section className="team-results">
+        <section className="team-results__container">
             {teams.map((team, teamIndex) => (
-                <div className="team" key={teamIndex}>
+                <div className="team-results__card" key={teamIndex}>
                     <h2>Team {teamIndex + 1}</h2>
-                    <ul className="team__member-list">
+                    <ul className="team-results__member-list">
                         {team.map((student, studentIndex) => (
-                            <li className="team__member" key={studentIndex}>
+                            <li
+                                className="team-results__member"
+                                key={studentIndex}
+                            >
                                 {student.name}
                             </li>
                         ))}
