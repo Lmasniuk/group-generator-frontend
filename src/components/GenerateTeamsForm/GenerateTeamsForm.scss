@@ -1,0 +1,16 @@
+.generate-teams-form {
+    display: flex;
+    flex-direction: column;
+    span {
+        margin: 0.5em;
+        padding: 0.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.submit-button {
+    padding: 1em;
+    background-color: aquamarine;
+    align-self: center;
+}

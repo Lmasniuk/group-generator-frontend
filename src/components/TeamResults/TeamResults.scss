@@ -1,0 +1,18 @@
+.team-results {
+    display: flex;
+    flex-direction: column;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__member-list {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+    &__member {
+        list-style: none;
+    }
+}
