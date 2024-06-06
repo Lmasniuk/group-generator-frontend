@@ -1,0 +1,29 @@
+.team-results {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 20px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid #00544a;
+        border-radius: 8px;
+        width: 200px;
+    }
+
+    &__member-list {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+    &__member {
+        list-style: none;
+    }
+}
