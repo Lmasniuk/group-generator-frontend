@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import "./App.scss";
 import TeamResults from "./components/TeamResults/TeamResults";
@@ -8,7 +8,7 @@ function App() {
     const [teams, setTeams] = useState([]);
 
     const downloadExampleCsv = async () => {
-        const response = await fetch("../test-data/test-csv.csv");
+        const response = await fetch("/example.csv");
         if (!response.ok) {
             throw new Error("Network response was not ok");
         }
