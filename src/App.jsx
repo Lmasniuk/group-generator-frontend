@@ -34,7 +34,7 @@ function App() {
 
     return (
         <>
-            <h1>Team Genie</h1>
+            <h1>🧞‍♂️Team Genie🧞‍♂️</h1>
             <button onClick={downloadExampleCsv}>
                 Download Example .csv File
             </button>

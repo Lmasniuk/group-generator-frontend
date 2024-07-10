@@ -1,6 +1,8 @@
+@use "../../styles/partials/variables" as *;
+
 .form {
     &__container {
-        background: white;
+        background-color: $primary-color;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,11 +25,11 @@ label {
 input[type="file"],
 input[type="number"] {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $tertiary-color;
     border-radius: 5px;
 }
 .submit-button {
     padding: 1em;
-    background-color: #ff6f61;
+    background-color: $tertiary-color;
     align-self: center;
 }
