@@ -11,3 +11,7 @@
 -   Allow the user to input the max group size, where groups will be either the max size or 1 less than the max size.
 -   Information on the page that indicates how the groupings are made
 -   A button labeled "Generate Groups" that when pressed, will attempt to generate groups and then display the groups.
+
+
+TODO:
+* More design work
