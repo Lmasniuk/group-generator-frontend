@@ -106,7 +106,9 @@ export default function GenerateTeamsForm({ setTeams }) {
                 />
             </div>
             <button
-                className="submit-button"
+                className={`submit-button submit-button--${
+                    buttonDisabled ? "disabled" : ""
+                }`}
                 type="submit"
                 disabled={buttonDisabled}
             >
