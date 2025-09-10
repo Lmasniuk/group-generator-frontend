@@ -1,4 +1,3 @@
-import React from "react";
 import "./TeamResults.scss";
 
 export default function TeamResults({ teams }) {
